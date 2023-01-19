@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+
+#container {
+  position: relative;
+  background-color:grey;
+  width:400px;
+  height:375px;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  font-size:90px;
+  color: rgba(255, 255, 255, 0.6);
+  top: 40px;
+  text-align: center;
+  height:100%;
+  transform: scaleY(2.5);
+  transform: scaleX(1.5);
+  margin-top:auto;
+  margin-bottom:auto;
+  font-weight:700;
+}
+
+.thumbnail{
+  width:175px;
+  height:175px;
+  z-index: 2;
+  position: relative;
+  margin-top:50px;
+}
+
+body > #root > div > div > .details {
+  height: 100vh !important;
+}
+
